@@ -30,7 +30,13 @@ helpmenu = Menu(menubar,tearoff=0)
 menubar.add_cascade(label='Help',menu=helpmenu)
 helpmenu.add_command(label='About',command=About)
 
+# Donate
+def Donate():
+	messagebox.showinfo('Donate','Address BEP20 (BSC) : 0x1d3aAE3D7eEE05966109b469917496968Ca56e93')
 
+donatemenu = Menu(menubar,tearoff=0)
+menubar.add_cascade(label='Donate',menu=donatemenu)
+donatemenu.add_command(label='Donate',command=Donate)
 
 
 
